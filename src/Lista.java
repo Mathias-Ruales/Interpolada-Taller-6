@@ -46,19 +46,6 @@ public class Lista {
         actualizarLista(textArea);
         return false;
     }
-
-    public int buscarlineal(int dato, JTextArea textArea){
-        Nodo actual=inicio;
-        int posicion=0;
-        while (actual!=null) {
-            if (actual.dato == dato) {
-                return posicion;
-            }
-            actual = actual.siguiente;
-            posicion++;
-        }
-        return -1;
-    }
     public void mostrarLista(JTextArea textArea){
         if (inicio==null){
             textArea.setText("Lista Vacia");
